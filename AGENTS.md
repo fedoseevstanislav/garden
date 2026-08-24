@@ -1,0 +1,9 @@
+# Agent instructions (Codex CLI and others)
+
+This repository ships three skills.
+
+**`skills/mini-tz/SKILL.md`** — when the user wants requirements taken off them for one automation («сними с меня требования», «помоги написать мини-ТЗ», `/mini-tz`), read that SKILL.md and follow it exactly. Interview mode: exactly one question per message, no solutions, re-ask vague answers, read-back paragraph before writing the file. Output is `мини-тз.md` in the cwd, in the fixed form given in the skill, with criteria `C1…Cn` and anti-criteria `A1…An`. It is the input to `review-loop`.
+
+**`skills/profile/SKILL.md`** — when the user asks for their productivity profile («мой профиль продуктивности», «какая система планирования мне подходит», `/productivity-profile`), read that SKILL.md and follow it exactly. It references files under `skills/productivity-profile/references/` and the scorer `skills/productivity-profile/scripts/score.py`. Do not improvise interpretations; use only the tables in the reference files.
+
+**`skills/review-loop/SKILL.md`** — when the user asks to have work checked by another model («проверь другой моделью», «прогони через ревью», «проверь по критериям», `/review-loop`), read that SKILL.md and follow it exactly. Key rule: the reviewer must be a different model from the one doing the work — a different family is preferred, a different model of the same family is acceptable, the same model is not. Inside Codex, prefer `claude -p --model <другая модель> --tools Read,Glob,Grep`; if `claude` is not on PATH, run a fresh `codex exec -m <id, отличный от модели сессии>`. If no different model is reachable, say so and stop — never review with the same model and never substitute the reviewer silently. It requires `мини-тз.md`; without it, send the user to `/mini-tz` instead of inventing criteria. The reviewer prompt template is `skills/review-loop/references/reviewer-prompt.md`.

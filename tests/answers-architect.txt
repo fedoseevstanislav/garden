@@ -1,0 +1,6 @@
+# Synthetic "architect" profile: high Orderliness, high Self-Discipline, low novelty, low stress reactivity
+5 5 1 5 1 4 2 5
+5 1 4 1 4 4 5 2
+1 5 1 5 5 2 1 5
+5 1 5 5 1 4 5 1
+1 5 5 1 5 2 1 2

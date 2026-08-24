@@ -1,0 +1,9 @@
+{
+  "name": "garden",
+  "description": "Three skills: mini-tz (requirements interview producing a criteria file), review-loop (a different-family model checks the work against those criteria), and profile (40-item IPIP-NEO questionnaire in Russian with a method-fit report and optional read-only audit).",
+  "version": "0.3.0",
+  "author": {
+    "name": "Stas Fedoseev"
+  },
+  "license": "MIT"
+}
