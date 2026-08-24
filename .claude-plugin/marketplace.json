@@ -1,6 +1,6 @@
 {
   "name": "garden",
-  "description": "Requirements interview, cross-model review loop, and productivity profile (AI Mindset S26 lab exercises)",
+  "description": "Requirements interview, cross-model review loop, productivity profile, and play interview (AI Mindset S26 lab exercises)",
   "owner": {
     "name": "Stas Fedoseev"
   },
@@ -8,7 +8,7 @@
     {
       "name": "garden",
       "source": "./",
-      "description": "mini-ТЗ interview, cross-model review loop, and a productivity personality profile (Russian)."
+      "description": "mini-ТЗ interview, cross-model review loop, a productivity personality profile, and a play interview (Russian)."
     }
   ]
 }
