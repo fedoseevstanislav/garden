@@ -1,7 +1,7 @@
 {
   "name": "garden",
   "description": "Four skills: mini-tz (interview for one task producing a yes/no criteria file), review-loop (a different-family model checks the work against the criteria, or against the original request when there are none), profile (40-item IPIP-NEO questionnaire in Russian with a method-fit report and optional read-only audit), and play (a 10-minute interview to find what play is for you and how much of it your week holds).",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": {
     "name": "Stas Fedoseev"
   },
